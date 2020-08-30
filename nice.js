@@ -22,7 +22,8 @@ addnotebuttn.addEventListener('click', function(){
     let textEl = document.createElement('p')
     noteEl.classList.add('note')
 
-     textEl.innerHTML = text
+      textEl.innerHTML = text.value
+        
 
     // // console.log(addnotebuttn)
     // let notebox = document.createElement('div')
