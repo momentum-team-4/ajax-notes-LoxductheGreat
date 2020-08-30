@@ -2,6 +2,7 @@ window.addEventListener('load', function(){
     fetch('http://localhost:3000/notes/')
     .then(response => response.json())
     .then(data => {console.log(data)})
+                    
 })
 
 
@@ -10,19 +11,31 @@ let addnotebuttn = document.querySelector('#create-note')
 let addnotebar = document.querySelector('#addnotebar')
 // let notesDiv = document.querySelector('#notes')
 let finalnote = document.querySelector('#note-board')
+// let text = document.querySelector('')
+ let text = document.querySelector('#notetext')
 
-
+// let displaytext = text.value
 
 
 addnotebuttn.addEventListener('click', function(){
-    console.log(addnotebuttn)
-    let notebox = document.createElement('div')
-    notebox.classList.add('sample-note')
-    console.log(notebox)
+    let noteEl = document.createElement('div')
+    let textEl = document.createElement('p')
+    noteEl.classList.add('note')
 
-    finalnote.appendChild(notebox)
+     textEl.innerHTML = text
+
+    // // console.log(addnotebuttn)
+    // let notebox = document.createElement('div')
+    // notebox.classList.add('sample-note')
+    // // console.log(notebox)  
+    // console.log(text)    
+    // finalnote.appendChild(notebox)
+    // console.log(finalnote)
+
+    finalnote.appendChild(noteEl)
+    noteEl.appendChild(textEl)
     console.log(finalnote)
-
+    console.log(noteEl)
 })
 
 
