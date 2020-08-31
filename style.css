@@ -11,7 +11,7 @@
     font-size: 1.10rem;
 }
 
-.sample-note{
+.note{
     display: flex;
     margin-top: 2rem;
     height: 15rem;
@@ -31,4 +31,15 @@
     flex: 33%;
     padding-left: 9rem;
     padding-right: 9rem;
+}
+
+.notetext{
+    display: flex;
+    margin-top: 2rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: #FFFF88;
+    border: black;
+    font-size: 0.95rem;
+    margin: 1rem;
 }
